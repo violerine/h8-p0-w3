@@ -25,25 +25,3 @@ console.log(mengelompokkanAngka([1, 2, 3, 4, 5, 6, 7, 8, 9])); // [ [ 2, 4, 8 ],
 console.log(mengelompokkanAngka([100, 151, 122, 99, 111])); // [ [ 100, 122 ], [ 151 ], [ 99, 111 ] ]
 console.log(mengelompokkanAngka([])); // [ [], [], [] ]
 
-
-// array = [15,2,7] 
-
-// function sorting(x){ 
-//   hasil = [] 
-//   for(i=0;i<3;i++){ 
-//     hasil[i]=[] 
-     
-//   } 
-//   for(j=0;j<x.length;j++){ 
-//     if(x[j]%2==0){ 
-//       hasil[0].push(x[j]) 
-//     }else if(x[j]%2 == 1 && x[j]%3!==0){ 
-//       hasil[1].push(x[j]) 
-//     }else hasil[2].push(x[j]) 
-//   } 
-//   return hasil 
-// } 
-
- 
-
-// console.log(sorting(array))
