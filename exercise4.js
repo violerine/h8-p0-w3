@@ -11,6 +11,7 @@ function dataHandling2(array){
     return array
 }
 console.log(dataHandling2(input))
+var dataHandlingg2=dataHandling2(input)
 
 function splitTanggal(a){
     var next = a.slice(3,4)
@@ -20,58 +21,53 @@ function splitTanggal(a){
     
 }
 
-console.log(splitTanggal(dataHandling2(input)))
-
 var answer = splitTanggal(dataHandling2(input))
-console.log(answer)
 
-var tanggal = answer[0]
-console.log(tanggal)
-var bulan = answer[1]
-console.log(bulan)
-var tahun = answer[2]
-console.log(tahun)
 
-// function switchcase(datee){
-    console.log("====> ",bulan)
+var answerSort= answer.sort(function(a,b){return b-a})
+
+console.log(answerSort)
+var join=answerSort.join("-")
+console.log(join)
+
+
+var tahun = answer[0]
+var tanggal = answer[1]
+var bulan = answer[2]
+
+
 switch(bulan){
-    
     case '01': 
-    date = tanggal + " Januari " + tahun ;break
+    date ="Januari" ;break
     case '02': 
-    date= tanggal + " Februari " + tahun;break
+    date="Februari";break
     case '03': 
-    date = tanggal + " Maret " + tahun ;break
+    date ="Maret" ;break
     case '04': 
-    date = tanggal + " April " + tahun ;break
+    date ="April" ;break
     case '05': 
-    date = tanggal + " Mei " + tahun ;break
+    date ="Mei" ;break
     case '06': 
-    date = tanggal + " Juni " + tahun ;break
+    date ="Juni" ;break
     case '07': 
-    date = tanggal + " July " + tahun ;break
+    date ="July" ;break
     case '08': 
-    date = tanggal + " Agustus " + tahun;break
+    date ="Agustus";break
     case '09': 
-    date = tanggal + " September " + tahun ;break
+    date ="September" ;break
     case '10': 
-    date = tanggal + " Oktober " + tahun ;break
+    date ="Oktober" ;break
     case '11': 
-    date = tanggal + " November " + tahun; break
+    date ="November"; break
     case '12': 
-    date = tanggal + " Desember " + tahun ;break
-    default :
+    date ="Desember" ;break
+    default:
     date = "none"
-    }
-//     return date
-// }
-
-// console.log(switchcase(answer))
+}
 console.log(date)
 
+var sliceAnswer=dataHandlingg2[1].slice(0,15)
+console.log(sliceAnswer)
 
 
-// var next = dataHandling2(input).slice(3,4)
-// var tostring = next.toString()
-// var split = tostring.split("/")
 
