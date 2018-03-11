@@ -10,10 +10,8 @@ function perkalianUnik(arr){
             }
         }
         hasil.push(tes)
-        
     }
     return hasil
-        
 }
 
 console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]

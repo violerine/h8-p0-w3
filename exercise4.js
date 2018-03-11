@@ -1,42 +1,28 @@
 var input =["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"]
 
 function dataHandling2(array){
+
+   
     var pop = array.pop();
     array.push("Pria","SMA Internasional Metro");
     array.splice(2,0,"Elsharawy","Provinsi");
     var slicee= array.slice(1,3).join(" ")
     var slicee2 = array.slice(3,5).join(" ")
     array.splice(1,4,slicee,slicee2)
+   console.log(array)
 
-    return array
-}
-console.log(dataHandling2(input))
-var dataHandlingg2=dataHandling2(input)
+//split tanggal
 
-function splitTanggal(a){
-    var next = a.slice(3,4)
-    var tostring = next.toString()
-    var splitt = tostring.split("/")
-    return splitt
-    
-}
+   var splitt = array[3].split("/")
+   var splitt2 = array[3].split("/")
+   
+ 
 
-var answer = splitTanggal(dataHandling2(input))
+//buat bulan
 
+   var bulan=splitt[1]
 
-var answerSort= answer.sort(function(a,b){return b-a})
-
-console.log(answerSort)
-var join=answerSort.join("-")
-console.log(join)
-
-
-var tahun = answer[0]
-var tanggal = answer[1]
-var bulan = answer[2]
-
-
-switch(bulan){
+   switch(bulan){
     case '01': 
     date ="Januari" ;break
     case '02': 
@@ -64,10 +50,20 @@ switch(bulan){
     default:
     date = "none"
 }
-console.log(date)
 
-var sliceAnswer=dataHandlingg2[1].slice(0,15)
-console.log(sliceAnswer)
+//Sort & Join tanggal
+var sortTanggal= splitt.sort(function(a,b){return b-a})
+console.log(sortTanggal)
+var joinTanggal=splitt2.join("-")
+console.log(joinTanggal)
+
+var sliceNama=array[1].slice(0,15)
+console.log(sliceNama)
+
+
+
+}
+dataHandling2(input)
 
 
 

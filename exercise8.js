@@ -7,11 +7,7 @@ function pasanganTerbesar(num){
             if(pembanding<parseInt(sort)){
                 pembanding = parseInt(sort)
             }
-            
-        
     }
     return pembanding
 }
-
-
 console.log(pasanganTerbesar(641573)) 
